@@ -1,0 +1,1 @@
+Add a --json flag to wordfreq that outputs the results as a JSON object ({"word": count, ...}) instead of the default word: count lines, preserving the same sort order as key order. Add a test covering the JSON output
