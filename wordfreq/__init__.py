@@ -1,0 +1,20 @@
+"""Count word frequencies from text."""
+
+from collections import Counter
+import re
+
+
+# Match runs of Unicode letters and digits, but not underscores.
+_WORD_RE = re.compile(r"[^\W_]+", re.UNICODE)
+
+
+def count_words(text: str) -> Counter[str]:
+    """Return lowercase word counts for *text*."""
+    return Counter(_WORD_RE.findall(text.lower()))
+
+
+def top_words(text: str, limit: int = 10) -> list[tuple[str, int]]:
+    """Return the most frequent words, with alphabetical tie-breaking."""
+    if limit < 0:
+        raise ValueError("limit must be non-negative")
+    return sorted(count_words(text).items(), key=lambda item: (-item[1], item[0]))[:limit]
