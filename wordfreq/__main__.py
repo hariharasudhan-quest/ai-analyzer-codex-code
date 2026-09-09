@@ -15,12 +15,21 @@ def main() -> int:
         metavar="N",
         help="number of words to print (default: 10)",
     )
+    parser.add_argument(
+        "--min-length",
+        type=int,
+        default=1,
+        metavar="N",
+        help="minimum word length (default: 1)",
+    )
     args = parser.parse_args()
 
     if args.top < 0:
         parser.error("--top must be non-negative")
+    if args.min_length < 0:
+        parser.error("--min-length must be non-negative")
 
-    for word, count in top_words(sys.stdin.read(), args.top):
+    for word, count in top_words(sys.stdin.read(), args.top, args.min_length):
         print(f"{word}: {count}")
     return 0
 
