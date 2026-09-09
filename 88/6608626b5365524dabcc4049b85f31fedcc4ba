@@ -1,0 +1,20 @@
+.codex/hooks.json
+  h_0a6574c65f7ff8 1-88
+.entire/.gitignore
+  h_0a6574c65f7ff8 1-5
+.entire/settings.json
+  h_0a6574c65f7ff8 1-9
+Readme.md
+  h_0a6574c65f7ff8 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "886608626b5365524dabcc4049b85f31fedcc4ba",
+  "prompts": {},
+  "humans": {
+    "h_0a6574c65f7ff8": {
+      "author": "hariharasudhan-quest <harihara.sudhan@quest1.io>"
+    }
+  }
+}
