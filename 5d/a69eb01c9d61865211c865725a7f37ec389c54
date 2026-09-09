@@ -1,0 +1,21 @@
+wordfreq/__main__.py
+  s_d769ef4195b5e5::t_3c7070a9a68014 18-24,29-30,32
+wordfreq/__init__.py
+  s_d769ef4195b5e5::t_3c7070a9a68014 16,20-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "5da69eb01c9d61865211c865725a7f37ec389c54",
+  "prompts": {},
+  "sessions": {
+    "s_d769ef4195b5e5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0853e-a76d-79a0-9386-9cf66d19e2e1",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "hariharasudhan-quest <harihara.sudhan@quest1.io>"
+    }
+  }
+}
